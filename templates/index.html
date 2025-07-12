@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt Solver Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/themes.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-robot"></i> Doubt Solver</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <img src="/static/icons/sun.png" alt="Light mode" class="theme-icon light-icon">
+                <img src="/static/icons/moon.png" alt="Dark mode" class="theme-icon dark-icon">
+            </button>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-message">
+                    <h2>Welcome to Doubt Solver!</h2>
+                    <p>Ask me anything or upload files for explanations.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-microphone"></i>
+                            <span>Voice Input</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-file-upload"></i>
+                            <span>File Upload</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-options">
+                    <button id="voice-btn" class="icon-btn" title="Voice Input">
+                        <img src="/static/icons/mic.png" alt="Voice input">
+                    </button>
+                    <label for="file-upload" class="icon-btn" title="Upload File">
+                        <img src="/static/icons/attach.png" alt="Attach file">
+                        <input type="file" id="file-upload" accept=".pdf,.doc,.docx,.txt,.jpg,.png">
+                    </label>
+                </div>
+                <div class="text-input">
+                    <textarea id="user-input" placeholder="Type your doubt here..."></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <img src="/static/icons/send.png" alt="Send">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-indicator" id="status-indicator">
+            <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span>AI is thinking...</span>
+        </div>
+    </div>
+    
+
+    <script src="/static/js/theme.js"></script>
+    <script src="/static/js/voice.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>

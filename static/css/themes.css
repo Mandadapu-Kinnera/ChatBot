@@ -1,0 +1,29 @@
+[data-theme="dark"] {
+    --primary-color: #6b8cff;
+    --secondary-color: #2a2a3a;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a1f;
+    --chat-bg: #24242e;
+    --message-user-bg: #3a3a4a;
+    --message-bot-bg: #2e2e3a;
+    --message-border: #3a3a3a;
+    --input-bg: #2a2a35;
+    --input-border: #3a3a4a;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .theme-icon.light-icon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-icon.dark-icon {
+    display: block;
+}
+
+[data-theme="light"] .theme-icon.light-icon {
+    display: block;
+}
+
+[data-theme="light"] .theme-icon.dark-icon {
+    display: none;
+}
